@@ -1,15 +1,472 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Potato Factory 🥔</title>
+        <title>Cattle Stop Café</title>
+        <style>
+            .article {
+                display: flex;
+                align-items: flex-start;
+            }
+            .text {
+                flex: 1;
+                text-align: left;
+            }
+            .image {
+                height: 150px;
+                margin-right: 20px;
+            }
+        </style>
     </head>
-    <body>
-        <h1 class="heading" id="#title-heading">
-            Potato Factory 🥔
-        </h1>
-        <p>
-            This is my first solo HTML project.<br>
-            I hope this goes well!
-        </p>
+    <body style="background-color: burlywood;">
+        <!--
+        - A header section that features:
+            ~ An image with an id of "header-img".
+            ~ A <h1> heading element with the name of the restaurant.
+            ~ A navigation section with two headings for "#menu" and "#order-form".
+        -->
+        <header style="background-color: red;">
+            <h1 class="heading" id="#title-heading">
+                Cattle Stop Café
+            </h1>
+            <img
+                width="250"
+                src="ceicils_b&g_inside.jpeg"
+                id="header-img"
+            />
+            <nav>
+                <!-- <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order-form">Order Form</a></li>
+                </ul> -->
+                <a href="#menu">Menu</a>: 
+                <a href="#beverages-section"><i>Beverages</i></a>, 
+                <a href="#shareables-section"><i>Shareables</i></a>
+                <br>
+                <a href="#order-form">Order Form</a>
+            </nav>
+        </header>
+        <!--
+        - A main section for the menu and order form, featuring:
+            Two sections, each with a <h2> heading that says "Menu" and "Place Your Order".
+            ~ The "Menu" section should have at least three <article> elements 
+                for the menu items that use the following elements:
+                - An <img> image element.
+                - A <h3> element for the name of the menu item.
+                - A <p> paragraph element that briefly describes the item (1-2 sentences) and 
+                    includes price information (italicized).
+        -->
+        <main>
+            <section>
+                <h2 class="heading" id="menu">
+                    Menu
+                </h2>
+                <h4>
+                    Just hungry? Skip to our <a href="#shareables-section"><i>Shareables</i></a> section!
+                </h4>
+                <h3 class="heading" id="beverages-section">
+                    <i>Beverages</i>
+                </h3>
+                <h3>
+                    <u>Berry Bliss</u> - <i>$3.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        You like berries? This drink is for you! <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\beverages\berry_bliss.jpeg"
+                        alt="berry_bliss"
+                    />
+                </article>
+                <h3>
+                    <u>Cucumber Lemon Lime Water</u> - <i>$1.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Just want you need between jobs on the ranch. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\beverages\cucumber_lemon_lime_water.jpeg"
+                        alt="cucumber_lemon_lime_water"
+                    />
+                </article>
+                <h3>
+                    <u>Fruity Fizz</u> - <i>$3.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Feeling nostalgic? Try this! <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\beverages\strawmint_lemonade.jpeg"
+                        alt="strawmint_lemonade"
+                    />
+                </article>
+                <h3>
+                    <u>Mango Green Tea</u> - <i>$4.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Want to quench your thirst and heal the soul? Yes. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\beverages\mango_green_tea.jpeg"
+                        alt="mango_green_tea"
+                    />
+                </article>
+                <h3>
+                    <u>Pacific Punch</u> - <i>$3.99</i>
+                </h3>
+                <article  class="article">
+                    <p class="text">
+                        Feeling feisty? This one is calling for you. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\beverages\pacific_punch.jpeg"
+                        alt="pacific_punch"
+                    />
+                </article>
+                <h3 class="heading" id="shareables-section">
+                    <i>Shareables</i>
+                </h3>
+                <h3>
+                    <u>Caesar Salad</u> - <i>$4.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Feeling something light? We got you! <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img 
+                        class="image"
+                        src="menu_items\shareables\caesar_salad.jpeg"
+                        alt="caesar_salad"
+                    />
+                </article>
+                <h3>
+                    <u>Cheese Bites</u> - <i>$7.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Cheesy spicy goodness!<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\shareables\cheese_bites.jpeg"
+                        alt="cheese_bites"
+                    />
+                </article>
+                <h3>
+                    <u>Fried Pickles</u> - <i>$7.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        A classic side to share with friends (or keep to yourself; we don't judge!) <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\shareables\fried_pickles.jpeg"
+                        alt="fried_pickles"
+                    />
+                </article>
+                <h3>
+                    <u>House Salad</u> - <i>$4.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Something hearty and tasteful with your choice of dressing! <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\shareables\house_salad.jpeg"
+                        alt="house_salad"
+                    />
+                </article>
+                <h3>
+                    <u>Loaded Leaves</u> - <i>$8.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Potato wedges loaded with cheddar cheese and bacon bits!<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\shareables\loaded_leaves.jpeg"
+                        alt="loaded_leaves"
+                    />
+                </article>
+                <h3>
+                    <u>Mozzarella Sticks</u> - <i>$9.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Cheesy goodness served with a side of house-made marinara!<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\shareables\mozz_sticks.jpeg"
+                        alt="mozz_sticks"
+                    />
+                </article>
+                <h3>
+                    <u>Onion Blossom</u> - <i>$8.99</i>
+                </h3>
+                <article class="article">
+                    <p class="text">
+                        Craving something different! We have our large deep friend onion served 
+                        with a side of our signature Desert Dip!<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque lacinia augue ut tellus tristique eleifend. 
+                        Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                        Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                        Vestibulum sed orci ac nibh imperdiet convallis. 
+                        Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                        Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    </p>
+                    <img
+                        class="image"
+                        src="menu_items\shareables\onion_blossom.jpeg"
+                        alt="onion_blossom"
+                    />
+                </article>
+            </section>
+            <section>
+                <!--
+                    ~ The "Place Your Order" section must include a <form> element with the following inputs:
+                    - Number inputs for each menu item (make sure to validate input with a minimum of 0).
+                    - Radio and/or checkbox inputs for things like sides and add-ons.
+                    - At least one <textarea> element for one of the items (for special requests).
+                    - A submit input that says "Go To Checkout".
+                    - Note: Make sure to include a <label> element for each <input> element.
+                    - A footer that includes a <p> paragraph element that reads "Made with love by " 
+                    followed by your Codédex username.
+                -->
+                <h2 class="heading" id="order-form">
+                    Place Your Order
+                </h2>
+                <p>
+                    Haven't started this yet. Coming soon...<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque lacinia augue ut tellus tristique eleifend. 
+                    Praesent tincidunt congue lacus, at pharetra mi viverra ac. 
+                    Suspendisse id sem nulla. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Vivamus eleifend eu lectus eu molestie. 
+                    Vestibulum sed orci ac nibh imperdiet convallis. 
+                    Fusce vel nibh iaculis tellus dapibus fringilla non sagittis purus. 
+                    Etiam elementum elit tellus, eget cursus turpis volutpat ut.
+                    <br>
+                </p>
+            </section>
+        </main>
     </body>
 </html>
