@@ -3,6 +3,10 @@
     <head>
         <title>Cattle Stop Café</title>
         <style>
+            .header {
+                display: flex;
+                align-items: flex-start;
+            }
             .article {
                 display: flex;
                 align-items: flex-start;
@@ -11,50 +15,49 @@
                 flex: 1;
                 text-align: left;
             }
-            .image {
+            .restaurant-image {
+                height: 225px;
+                margin-right: 20px;
+                padding-left: 250px;
+            }
+            .menu-item-image {
                 height: 100px;
                 margin-right: 20px;
             }
         </style>
     </head>
     <body style="background-color: burlywood;">
-        <!--
-        - A header section that features:
-            ~ An image with an id of "header-img".
-            ~ A <h1> heading element with the name of the restaurant.
-            ~ A navigation section with two headings for "#menu" and "#order-form".
-        -->
-        <header style="background-color: skyblue;">
+        <header class="header" style="background-color: skyblue; color: darkslategrey;">
             <h1 class="heading" id="#title-heading">
                 Cattle Stop Café
             </h1>
+            <nav>
+                <h2>
+                    <a href="#menu">Menu</a>: 
+                </h2>
+                <ul> 
+                    <li>
+                        <h2>
+                            <a href="#beverages-section"><i>Beverages</i></a>                    
+                        </h2>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#shareables-section"><i>Shareables</i></a>
+                        </h2>
+                    </li>
+                </ul>
+                <h2>
+                    <a href="#order-form">Order Form</a>
+                </h2>
+            </nav>
             <img
+                class="restaurant-image"
                 width="250"
                 src="ceicils_b&g_inside.jpeg"
-                id="header-img"
+                alt="Inside Cattle Shop Cafe"
             />
-            <nav>
-                <!-- <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#order-form">Order Form</a></li>
-                </ul> -->
-                <a href="#menu">Menu</a>: 
-                <a href="#beverages-section"><i>Beverages</i></a>, 
-                <a href="#shareables-section"><i>Shareables</i></a>
-                <br>
-                <a href="#order-form">Order Form</a>
-            </nav>
         </header>
-        <!--
-        - A main section for the menu and order form, featuring:
-            Two sections, each with a <h2> heading that says "Menu" and "Place Your Order".
-            ~ The "Menu" section should have at least three <article> elements 
-                for the menu items that use the following elements:
-                - An <img> image element.
-                - A <h3> element for the name of the menu item.
-                - A <p> paragraph element that briefly describes the item (1-2 sentences) and 
-                    includes price information (italicized).
-        -->
         <main>
             <section>
                 <h2 class="heading" id="menu">
@@ -73,14 +76,19 @@
                     <p class="text">
                         Got a sweet tooth on the job? We got you covered! Our Berry Bliss is hand-shaken
                         with a mix of cranberry juice as well as natural blackberry flavoring and real
-                        fruit. 
+                        fruit. A tastful reward for a hard days work!
                     </p>
-                    <img
-                        class="image"
-                        src="menu_items\beverages\berry_bliss.jpeg"
-                        alt="berry_bliss"
-                        style="outline: 5px solid purple;"
-                    />
+                    <figure>
+                        <img
+                            class="menu-item-image"
+                            src="menu_items\beverages\berry_bliss.jpeg"
+                            alt="Mason Glass of Berry Bliss"
+                            style="outline: 5px solid purple;"
+                        />
+                        <figcaption>
+                            Berry Bliss
+                        </figcaption>
+                    </figure>
                 </article>
                 <h3>
                     <u>Cucumber Lemon Lime Water</u> - <i>$1.99</i>
@@ -93,12 +101,19 @@
                         bevereage with the freshest cucumbers, lemons, and limes in the 
                         Panhandle. What a refreshment!
                     </p>
-                    <img
-                        class="image"
-                        src="menu_items\beverages\cucumber_lemon_lime_water.jpeg"
-                        alt="cucumber_lemon_lime_water"
-                        style="outline: 5px solid yellowgreen;"
-                    />
+                    <figure>
+                        <img
+                            class="menu-item-image"
+                            src="menu_items\beverages\cucumber_lemon_lime_water.jpeg"
+                            alt="Antique Glass Filled with Cucumber Lemon Lime Water"
+                            style="outline: 5px solid yellowgreen;"
+                        />
+                        <figcaption>
+                            Cucumber<br>
+                            Lemon Lime<br>
+                            Water
+                        </figcaption>
+                    </figure>
                 </article>
                 <h3>
                     <u>Fruity Fizz</u> - <i>$3.99</i>
@@ -107,17 +122,22 @@
                     <p class="text">
                         Do you remember a time when you were young when you were playing outside, and
                         all you wanted to cool off with is a nice glass of freshly-squeezed lemonade?
-                        If yes, we've taken to the next level! Our Fizz brings together all the plesantries
+                        If yes, we've taken it to the next level! Our Fizz brings together all the plesantries
                         of freshly-squeezed lemonade with our own locally grown strawberries and mint
                         leaves to bring you a Texas-Tornado of fruity refreshment. If no, you'll
                         love the drink anyways!
                     </p>
-                    <img
-                        class="image"
-                        src="menu_items\beverages\strawmint_lemonade.jpeg"
-                        alt="strawmint_lemonade"
-                        style="outline: 5px solid pink;"
-                    />
+                    <figure>
+                        <img
+                            class="menu-item-image"
+                            src="menu_items\beverages\strawmint_lemonade.jpeg"
+                            alt="Antique Glass Filled with Strawberry Mint Lemonade"
+                            style="outline: 5px solid pink;"
+                        />
+                        <figcaption>
+                            Fruity Fizz
+                        </figcaption>
+                    </figure>
                 </article>
                 </article>
                 <h3 class="heading" id="shareables-section">
@@ -133,12 +153,17 @@
                         with our house-made marinara sauce. Or our house-made ranch. 
                         It's your choice! 
                     </p>
-                    <img
-                        class="image"
-                        src="menu_items\shareables\mozz_sticks.jpeg"
-                        alt="mozz_sticks"
-                        style="outline: 5px solid goldenrod;"
-                    />
+                    <figrue>
+                        <img
+                            class="menu-item-image"
+                            src="menu_items\shareables\mozz_sticks.jpeg"
+                            alt="Dinner Plate with 6 Mozzarella Sticks"
+                            style="outline: 5px solid goldenrod;"
+                        />
+                        <figcaption>
+                            Mozzarella Sticks
+                        </figcaption>
+                    </figrue>
                 </article>
                 <h3>
                     <u>Fried Pickles</u> - <i>$7.99</i>
@@ -152,12 +177,17 @@
                         signature house-made ranch or our house-made cajun horseradish (not made
                         with real horses).
                     </p>
-                    <img
-                        class="image"
-                        src="menu_items\shareables\fried_pickles.jpeg"
-                        alt="fried_pickles"
-                        style="outline: 5px solid goldenrod;"
-                    />
+                    <figure>
+                        <img
+                            class="menu-item-image"
+                            src="menu_items\shareables\fried_pickles.jpeg"
+                            alt="Starter Plate Filled with Fried Pickles with Cajun Horseradish"
+                            style="outline: 5px solid goldenrod;"
+                        />
+                        <figcaption>
+                            Fried Pickles
+                        </figcaption>
+                    </figure>
                 </article>
                 <h3>
                     <u>Onion Blossom</u> - <i>$8.99</i>
@@ -169,12 +199,17 @@
                         than a wild horse! Our deep fried favorite can be served with your choice of
                         house-made ranch. Or if you're feeling wildly western... Spicy Ranch!
                     </p>
-                    <img
-                        class="image"
-                        src="menu_items\shareables\onion_blossom.jpeg"
-                        alt="onion_blossom"
-                        style="outline: 5px solid goldenrod;"
-                    />
+                    <figure>
+                        <img
+                            class="menu-item-image"
+                            src="menu_items\shareables\onion_blossom.jpeg"
+                            alt="Starter Plate with Onion Blossom and Spicy Ranch"
+                            style="outline: 5px solid goldenrod;"
+                        />
+                        <figcaption>
+                            Onion Blossom
+                        </figcaption>
+                    </figure>
                 </article>
                 <h3>
                     <u>House Salad</u> - <i>$4.99</i>
@@ -183,14 +218,19 @@
                     <p class="text">
                         Tired from herding cattle all day long and not that hungry? No problem!
                         Our House Salad is the perfect solution to nourish your slight hunger while
-                        keeping you healthy and strong for moving those big mooers!
+                        keeping you healthy and strong for herding those big mooers!
                     </p>
-                    <img
-                        class="image"
-                        src="menu_items\shareables\house_salad.jpeg"
-                        alt="house_salad"
-                        style="outline: 5px solid yellowgreen;"
-                    />
+                    <figure>
+                        <img
+                            class="menu-item-image"
+                            src="menu_items\shareables\house_salad.jpeg"
+                            alt="Salad Bowl with House Salad"
+                            style="outline: 5px solid yellowgreen;"
+                        />
+                        <figcaption>
+                            House Salad
+                        </figcaption>
+                    </figure>
                 </article>
                 <h3>
                     <u>Caesar Salad</u> - <i>$4.99</i>
@@ -202,37 +242,25 @@
                         house-baked croutons to top it off. Nothing like helping the local community and
                         enjoying a fine, healthy snack afterward.
                     </p>
-                    <img 
-                        class="image"
-                        src="menu_items\shareables\caesar_salad.jpeg"
-                        alt="caesar_salad"
-                        style="outline: 5px solid green;"
-                    />
+                    <figure>
+                        <img 
+                            class="menu-item-image"
+                            src="menu_items\shareables\caesar_salad.jpeg"
+                            alt="Salad Bowl with Caesar Salad"
+                            style="outline: 5px solid green;"
+                        />
+                        <figcaption>
+                            Caesar Salad
+                        </figcaption>
+                    </figure>
                 </article>
             </section>
             <section>
-                <!--
-                    ~ The "Place Your Order" section must include a <form> element with the following inputs:
-                    - Number inputs for each menu item (make sure to validate input with a minimum of 0).
-                    - Radio and/or checkbox inputs for things like sides and add-ons.
-                    - At least one <textarea> element for one of the items (for special requests).
-                    - A submit input that says "Go To Checkout".
-                    - Note: Make sure to include a <label> element for each <input> element.
-                -->
                 <h2 class="heading" id="order-form">
                     Place Your Order
                 </h2>
                 <h3><i>Max 10 Per Item - We need some for the rest of the local folks!</i></h3>
                 <form action="" method="">
-                    <label for="quanitity-mozzarella-sticks">Mozzarella Sticks - </label>
-                    <input type="number" min="0" max="10" value="0" id="quanitity-mozzarella-sticks">
-                    <br><br>
-                    <label for="quantity-fried-pickles">Fried Pickles - </label>
-                    <input type="number" min="0" max="10" value="0" id="quantity-fried-pickles">
-                    <br><br>
-                    <label for="quantity-onion-blossom">Onion Blossom - </label>
-                    <input type="number" min="0" max="10" value="0" id="quantity-onion-blossom">
-                    <br><br>
                     <label for="quantity-berry-bliss">Berry Bliss - </label>
                     <input type="number" min="0" max="10" value="0" id="quantity-berry-bliss">
                     <br>
@@ -266,6 +294,20 @@
                     <br>
                     <input type="radio" name="ff-size">Texas-Sized <i>(60oz.)</i>
                     <br><br>
+                    <label for="quanitity-mozzarella-sticks">Mozzarella Sticks - </label>
+                    <input type="number" min="0" max="10" value="0" id="quanitity-mozzarella-sticks">
+                    <br><br>
+                    <label for="quantity-fried-pickles">Fried Pickles - </label>
+                    <input type="number" min="0" max="10" value="0" id="quantity-fried-pickles">
+                    <br><br>
+                    <label for="quantity-onion-blossom">Onion Blossom - </label>
+                    <input type="number" min="0" max="10" value="0" id="quantity-onion-blossom">
+                    <p>
+                        -Tell us how you'd like your Blossom!
+                    </p>
+                    <textarea id="blossom-preparation-description" rows="5" cols="42"
+                        placeholder="Extra Done, Spicy and Regular Ranch, etc."></textarea>
+                    <br><br>
                     <label for="quantity-house-salad">House Salad - </label>
                     <input type="number" min="0" max="10" value="0" id="quantity-house-salad">
                     <p>-Remove any of the following toppings!</p>
@@ -277,7 +319,7 @@
                     <br>
                     <input type="checkbox" name="house-salad-toppings" checked>Croutons
                     <br>
-                    <p>-Select a Salad Dressing!</p>
+                    <p>-Select a Salad Dressing! (Don't worry, we're Texan - You'll get extra!)</p>
                     <input type="checkbox" name="house-salad-dressing">Ranch
                     <br>
                     <input type="checkbox" name="house-salad-dressing">Honey Mustard
@@ -293,17 +335,18 @@
                     <label for="quantity-caesar-salad">Caesar Salad - </label>
                     <input type="number" min="0" max="10" value="0" id="quantity-caesar-salad">
                     <br><br>
-                    <input type="submit" value="Go to Checkout">
+                    <textarea id="caesar-salad-preparation-description" rows="5" cols="42"
+                        placeholder="Extra Croutons, Caesar on Side, Add Ranch, etc."></textarea>
+                    <br><br>
+                    <input type="submit" value="Go To Checkout">
                 </form>
             </section>
         </main>
-        <!--
-        - A footer that includes a <p> paragraph element that reads "Made with love by " 
-            followed by your Codédex username.
-        -->
         <footer style="background-color: lightgoldenrodyellow;">
             <p>
-                Made with love by TexMexManiac!
+                Made with love by TexMexManiac! 
+                &#127790
+                &#128147
             </p>
         </footer>
     </body>
